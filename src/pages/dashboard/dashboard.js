@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 function applyRoleRestrictions(role) {
-    if (["user", "reactor", "commenter", "poster"].includes(role)) {
+    if (["user", "reactor", "commenter"].includes(role)) {
         document.getElementById("createPostSection").style.display = "none";
     }
 
