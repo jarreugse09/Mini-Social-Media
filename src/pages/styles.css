@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111111; /* Dark Vite UI Theme */
+  color: #fff;
+}
+
+.container {
+  background: #252525;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background: #2d2d2d;
+  border: none;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+button {
+  background: #646cff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #535bf2;
+  box-shadow: 0px 4px 12px rgba(100, 108, 255, 0.3);
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+a {
+  color: #646cff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
