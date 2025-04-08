@@ -75,7 +75,7 @@ async function getUserData() {
     if (!token) return null;
 
     try {
-        const response = await fetch("http://localhost:7001/api/auth/me", {
+        const response = await fetch("/api/auth/me", {
             method: "GET",
             headers: { Authorization: `Bearer ${token}` }
         });
@@ -97,7 +97,7 @@ async function fetchUsers() {
         const user = await getUserData();
         if (!user) return;
 
-        const response = await fetch("http://localhost:7001/api/users", {
+        const response = await fetch("/api/users", {
             method: "GET",
             headers: { Authorization: `Bearer ${token}` }
         });
@@ -145,7 +145,7 @@ async function updateUserRole(username, role) {
     if (!token) return;
 
     try {
-        const response = await fetch("http://localhost:7001/api/users/assign-role", {
+        const response = await fetch("/api/users/assign-role", {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
