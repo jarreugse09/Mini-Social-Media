@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const user = await getUserData();
         if (!user) {
             alert("User not authenticated!");
-            window.location.href = "login.html";
+            window.location.href = "/";
             return;
         }
 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("logoutBtn").addEventListener("click", () => {
             localStorage.removeItem("token");
             alert("Logged out!");
-            window.location.href = "../login.html";
+            window.location.href = "/";
         });
 
         applyRoleRestrictions(user.role);
