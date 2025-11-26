@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles/dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-inside">
+            <div>
+                <h2>Profile</h2>
+                <p class="profile-text"><strong><span id="username"></span></strong></p>
+                <p class="profile-text"><span id="role"></span></p>
+        
+                <div class="manage-users users-section">
+                    <h2 class="manage-title">Manage Users</h2>
+                    <ul id="usersList"></ul>
+                </div>
+            </div>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+    </div>
+    
+
+    <div class="main-content">
+        <div id="createPostSection" class="create-post">
+            <h2>Create a Post</h2>
+            <input type="text" id="postTitle" placeholder="Post Title">
+            <textarea id="postDescription" placeholder="Post Description"></textarea>
+            <input type="file" id="postImage">
+            <img id="imagePreview" style="display: none; max-width: 100%;">
+            <div class="post-buttons">
+                <button id="discardPost">Discard</button>
+                <button id="submitPost">Post</button>
+            </div>
+        </div>
+
+        <div id="postsContainer" class="feed"></div>
+    </div>
+
+    <div class="right-section">
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search..." class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        
+        <div class="site-details">
+            <button id="toggleMode">Dark Mode</button>
+            <p>Created by: Jomarie Esguerra</p>
+            <p>Build 03/10/2025</p>
+        </div>
+    </div>
+
+    <script src="../scripts/dashboard.js"></script>
+</body>
+</html>
