@@ -107,18 +107,22 @@ body.light-mode .theme-toggle button::before {
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   border-right: 1px solid var(--border-color);
   overflow-y: auto;
 }
 
 .brand-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .brand-logo {
-  width: 80px;
-  height: 80px;
+  width: 160px;
+  height: 160px;
   margin: 0 auto 20px;
   background: var(--primary-color);
   border-radius: 16px;
@@ -126,7 +130,7 @@ body.light-mode .theme-toggle button::before {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 40px;
+  font-size: 120px;
   box-shadow: 0 4px 12px rgba(182, 107, 13, 0.2);
 }
 
@@ -158,6 +162,7 @@ body.light-mode .brand-logo {
   display: flex;
   gap: 16px;
   align-items: flex-start;
+  margin-top: auto;
 }
 
 .feature-icon {
@@ -448,10 +453,14 @@ body.light-mode .btn-primary:hover {
   }
 
   .auth-left {
-    padding: 40px 30px;
-    min-height: 50vh;
-    border-right: none;
-    border-bottom: 1px solid var(--border-color);
+    background: var(--background-light);
+    color: var(--text-color);
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* <-- change from center to space-between */
+    border-right: 1px solid var(--border-color);
+    overflow-y: auto;
   }
 
   .auth-right {
