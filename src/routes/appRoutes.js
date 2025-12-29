@@ -17,4 +17,8 @@ router.route("/dashboard").get(async (req, res, next) => {
   res.sendFile(join(__dirname, "..", "pages", "dashboard.html"));
 });
 
+router.route("/profile").get(async (req, res, next) => {
+  res.sendFile(join(__dirname, "..", "pages", "profile.html"));
+});
+
 module.exports = router;

@@ -29,8 +29,6 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/posts", postsRouter);
 
-const PORT = process.env.PORT || 7002;
-
 mongoose
   .connect(normalizeConnectionString(process.env.CONNECTION_STRING), {})
   .then(() => console.log("Successfully Connected to MongoDB"))
@@ -57,6 +55,8 @@ mongoose
     }
     process.exit(1);
   });
+
+const PORT = process.env.PORT || 7002;
 
 function normalizeConnectionString(cs) {
   if (!cs || typeof cs !== "string") return cs;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/styles/profile.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-inside">
+        <div>
+          <h2>Profile</h2>
+          <p class="profile-text">
+            <strong><span id="username"></span></strong>
+          </p>
+          <p class="profile-text"><span id="role"></span></p>
+
+          <div class="manage-users users-section">
+            <a href="/dashboard">Dashboard</a>
+          </div>
+        </div>
+        <button class="logout-btn" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div id="profileContainer" class="profile">
+        <h2>User Profile</h2>
+        <div id="userInfo">
+          <!-- User info will be dynamically loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/profile.js"></script>
+  </body>
+</html>

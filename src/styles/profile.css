@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+:root {
+  --primary-color: #b66b0d;
+  --background-dark: #111111;
+  --background-light: #191c1f;
+  --text-color: #e3e6ea;
+  --card-bg: #121417;
+  --border-radius: 12px;
+  --secondary-text: #a1a7b3;
+  --hover-color: #7f4b0d;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --input-bg: #191c1f;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: var(--background-dark);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 25%;
+  background: var(--background-light);
+  padding: 20px;
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
+}
+
+.sidebar-inside {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.sidebar h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sidebar p {
+  font-size: 0.95rem;
+  color: var(--secondary-text);
+}
+
+.logout-btn {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: 0.2s;
+  margin-top: auto;
+}
+
+.logout-btn:hover {
+  background: #b71c1c;
+}
+
+.main-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 8px;
+  overflow-y: auto;
+}
+
+.profile {
+  background: var(--card-bg);
+  padding: 16px;
+  border-radius: var(--border-radius);
+  width: 92%;
+  margin: 8px auto 18px auto;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.profile h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#userInfo {
+    padding: 1em;
+}
+
+#userInfo p {
+    margin: 0.5em 0;
+}
